@@ -43,6 +43,7 @@ h1 span {
     display: flex;
     gap: 10px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .input-box input {
     padding: 10px;
@@ -50,6 +51,7 @@ h1 span {
     border-radius: 10px;
     outline: none;
     flex: 1;
+    min-width: 120px;
 }
 button {
     padding: 10px 15px;
@@ -96,4 +98,51 @@ button:hover {
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
+}
+
+
+/* Tablets */
+@media (max-width: 992px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .card p {
+        font-size: 1rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .forms {
+        gap: 10px;
+    }
+    .input-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input-box input {
+        width: 100%;
+        min-width: unset;
+    }
+    button {
+        width: 100%;
+    }
+    #map {
+        height: 300px;
+    }
 }
