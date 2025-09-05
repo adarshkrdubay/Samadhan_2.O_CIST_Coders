@@ -1,0 +1,99 @@
+/* Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 700px;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+h1 span {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Forms */
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.input-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.input-box input {
+    padding: 10px;
+    border: 2px solid #66a6ff;
+    border-radius: 10px;
+    outline: none;
+    flex: 1;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #66a6ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #4b8fea;
+}
+.geo-btn {
+    background: #ff7eb3;
+}
+.geo-btn:hover {
+    background: #ff4d8a;
+}
+
+/* Weather Card */
+.card {
+    margin: 20px auto;
+    background: #f1f9ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.card p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Map */
+#map {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
