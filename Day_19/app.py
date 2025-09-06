@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'dev-secret-key'  # change in production
+app.config['SECRET_KEY'] = 'seckeu'  # change in production
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///social.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
